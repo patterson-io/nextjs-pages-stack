@@ -55,12 +55,7 @@ jobs:
         with:
           name: github-pages
           path: artifact.tar
-          
-      - name: Configure GitHub Pages Branch
-        run: |
-          git checkout --orphan gh-pages
-          git push --force origin gh-pages
-          
+                    
       - name: Enable GitHub Pages
         uses: actions/github-script@v4
         continue-on-error: true # API fails when the GitHub pages is already deployed
