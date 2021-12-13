@@ -27,14 +27,14 @@ configs:
     - name: main
       parameters:
         enforce-admins: true
+    - name: gh-pages
 
   environments:
-    - name: development
+    - name: github-pages
       parameters:
         protected-branches: false
         allowed-branch-rules:
           - main
-          - releases/*
 
 init:
   uses: "stack-init.yaml"
