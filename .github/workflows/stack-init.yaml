@@ -59,7 +59,10 @@ jobs:
       - name: Configure GitHub Pages Branch
         run: |
           git checkout --orphan gh-pages
-          git push --force origin gh-pages  
+          rm -Rf *
+          git add .
+          git commit -m "Creating fake pages branch"
+          git push origin gh-pages  
           
       - name: Enable GitHub Pages
         uses: actions/github-script@v4
