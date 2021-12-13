@@ -28,7 +28,9 @@ configs:
       parameters:
         enforce-admins: true
     - name: gh-pages
-
+      parameters:
+        enforce-admins: true
+        
   environments:
     - name: github-pages
       parameters:
