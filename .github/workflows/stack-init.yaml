@@ -66,4 +66,4 @@ jobs:
             
   deploy:
     needs: setup
-    uses: ./.github/workflows/build-deploy.yaml
+    uses: ./.github/workflows/build-deploy.yaml@main
